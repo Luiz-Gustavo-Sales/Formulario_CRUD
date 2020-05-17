@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>FORMULARIO</title>
+  </head>
+  <body>
+    <form action="/cadastrar" method="POST">
+      <div class="form-group">
+        <div class="form-group col-6">
+          <label for="inputEmail4">login</label>
+          <input
+            name="login"
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="login"
+          />
+        </div>
+
+        <div class="form-group">
+          <div class="form-group col-6">
+            <label for="inputEmail4">Senha</label>
+            <input
+              name="senha"
+              type="password"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Senha"
+            />
+          </div>
+
+        <div class="form-group">
+          <div class="form-group col-6">
+            <label for="inputEmail4">Email</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group col-6">
+            <label for="inputEmail4">Endereço</label>
+            <input
+              name="endereco"
+              type="text"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Endereco1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-group col-6">
+          <label for="inputEmail4">Endereço 2</label>
+          <input
+            name="endereco2"
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Endereco2"
+          />
+        </div>
+
+        <div class="form-group">
+          <div class="form-group col-6">
+            <label for="inputCity">Cidade</label>
+            <input
+              name="cidade"
+              type="text"
+              class="form-control"
+              id="inputCity"
+            />
+          </div>
+        </div>
+        <div class="form-group col-4">
+          <label for="inputEstado">Estado</label>
+          <select name="estado" id="inputEstado" class="form-control">
+            <option selected>Escolher...</option>
+            <option>PA</option>
+            <option>BA</option>
+            <option>RJ</option>
+          </select>
+        </div>
+        <div class="form-group col-4">
+          <label for="inputCEP">CEP</label>
+          <input name="cep" type="text" class="form-control" id="inputCEP" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <a href="/login"
+        ><button type="button" class="btn btn-primary" class="rota2">
+          Fazer Login
+        </button></a
+      >
+    </form>
+  </body>
+</html>

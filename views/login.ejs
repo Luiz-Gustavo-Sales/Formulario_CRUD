@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="/loginUser" method="POST">
+      <div class="form-card-group">
+        <div class="card-header">
+          <p>Login</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <div class="form-group col-6">
+              <input
+                name="login"
+                type="text"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="login"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-group col-6">
+              <input
+                name="senha"
+                type="password"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="senha"
+              />
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <a href="/formulario"><button type="button" class="btn btn-primary" class="rota2">CADASTRAR</button></a>
+      </div>
+    </form>
+  </body>
+</html>
