@@ -1,6 +1,6 @@
 // IMPORTANDO EXPRESS
 const express = require("express");
-
+const port= process.env.PORT || 3000
 // IMPORTANDO ROUTES (rotas  da aplicação)
 const routes = require("./routes");
 
@@ -20,4 +20,6 @@ app.use(routes);
 
 //INICIANDO O SERVIDOR NA PORTA SETADA EM app.set('port', '8080')
 //app.set('port', '8080')
-app.listen(process.env.PORT || 3000);
+app.listen(port,function(){
+    console.log(`APP RODANDO NA PORTA ${port}`)
+});
